@@ -179,7 +179,11 @@ td{
     }
 
     .container-right{
-        margin: 5px;
+        width: 95%;
+    }
+
+    .container-left{
+        width: 95%;
     }
 
 }
