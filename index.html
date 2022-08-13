@@ -9,7 +9,7 @@
 
 <div class="container">
     <div class="pok-container">
-        <header class="header">
+        <header class="header charizard-bg" id="header">
             <div class="header-img">
                 <img src="images/PokIcon.svg" alt="">
             </div>
@@ -21,26 +21,26 @@
             <div class="main-container">
                 <div class="body-container">
                     <div class="container-left">
-                        <div class="container-header-left">
+                        <div class="container-header-left charizard-bg" id="tittle">
                             <div class="container-header-left-img">
-                                <img src="images/fire_icon-icons.com_70969.png" alt="">
+                                <img src="images/fire_icon.png" alt="">
                             </div>
                             <div class="container-header-left-txt">
-                                <h1>CHARIZARD</h1>
+                                <h1 id="pok_name">CHARIZARD</h1>
                             </div>
                         </div>
                         <div class="container-img-left">
-                            <img src="images/Mewtow.png" alt=""> 
+                            <img class="main-img" id="img" src="./images/charizard.png" alt="">
+
                         </div>
                     </div>
                     <div class="container-right">
-                        <div>
-                            <h1>STATS</h1>
-                        </div>
+                        <img class="table-img" id="table-img" src="./images/charizard.png" alt="">
+                        <div class="table">
                             <table>
                                 <tr>
-                                    <th>NO.</th>
-                                    <th>LEVEL</th>
+                                    <th class="th charizard-bg">NO.</th>
+                                    <th class="th charizard-bg">LEVEL</th>
                                 </tr>
                                 <tr>
                                     <td>235</td>
@@ -49,8 +49,8 @@
                             </table>
                             <table>
                                 <tr>
-                                    <th>TYPE</th>
-                                    <th>HABILITY</th>
+                                    <th class="th charizard-bg">TYPE</th>
+                                    <th class="th charizard-bg">HABILITY</th>
                                 </tr>
                                 <tr>
                                     <td>PSYCHIC</td>
@@ -59,48 +59,44 @@
                             </table>
                             <table>
                                 <tr>
-                                    <th>HEIGHT</th>
-                                    <th>WEIGHT</th>
+                                    <th class="th charizard-bg">HEIGHT</th>
+                                    <th class="th charizard-bg">WEIGHT</th>
                                 </tr>
                                 <tr>
                                     <td>2.0 m</td>
                                     <td>122,0 Kg</td>
                                 </tr>
                             </table>
+                        </div>
                     </div>
                 </div>
             </div>
         </main> 
         <footer>
-            <div class="footer-container">
-
+            <div class="footer-container charizard-bg" id="footer">
                 <div id="other-container">
                     <h1>OTHERS</h1>
                 </div>
 
                 <div class="pokemon-container">
-                    <div class="pokemon">
-                        <img class="buttomImgPK" src="images/sqBlack.png" 
-                        onmouseover="this.src='images/sq.png'"
-                        onmouseout="this.src='images/sqBlack.png'"/>
+                    <div class="pokemon hidden" id="charizard-c">
+                        <img class ="hidden" id="charizard" src="./images/charizard.png"/>
                     </div>
-                    <div class="pokemon">
-                        <img class="buttomImgPK" src="images/RaichuBlack.png" 
-                        onmouseover="this.src='images/Raichu.png'"
-                        onmouseout="this.src='images/RaichuBlack.png'"/>
+                    <div class="pokemon" id="blast-c">
+                        <img id="blast" src="./images/blast.png"/>
                     </div>
-                    <div class="pokemon">
-                        <img class="buttomImgPK" src="images/bbBlack.png" 
-                        onmouseover="this.src='images/bb.png'"
-                        onmouseout="this.src='images/bbBlack.png'"/>
+                    <div class="pokemon" id="diglett-c">
+                        <img id="diglett" src="./images/diglett.png" />
                     </div>
-                    <div class="pokemon">
-                        <img class="buttomImgPK" src="images/ducBlack.png" 
-                        onmouseover="this.src='images/duc.png'"
-                        onmouseout="this.src='images/ducBlack.png'"/>
+                    <div class="pokemon" id="pikachu-c">
+                        <img id="pikachu" src="./images/pikachu.png"/>
+                    </div>
+                    <div class="pokemon" id="eevee-c">
+                        <img id="eevee" src="./images/eevee.png"/>
                     </div>
                 </div>
             </div>
+            <script src="main.js"></script>
         </footer>
     </div> 
 </div>
