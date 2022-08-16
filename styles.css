@@ -48,7 +48,9 @@
     outline: solid 1px;
     border-radius: 10px;
     display: flex;
-    flex-flow: column;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    background-color: var(--main-bg);
 }
 
 .header{
@@ -76,7 +78,6 @@ img.cover{
 
 .main-container{
     width: 100%;
-    background-color: var(--main-bg);
     padding: 15px;
 }
 
