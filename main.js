@@ -44,7 +44,6 @@ function eeveebg(element){
 }
 
 // ONCLICK DE CADA BOTON
-
 charizard.onclick = function(){
 
     // cambiamos al pokemon seleccionado
