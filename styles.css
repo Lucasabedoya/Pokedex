@@ -81,6 +81,7 @@ img.cover{
 .body-container{
     width: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -89,6 +90,7 @@ img.cover{
     display: flex;
     flex-flow: column wrap;
     align-items: center;
+    justify-content: space-between;
     padding: 10px;
 }
 
@@ -100,6 +102,7 @@ img.cover{
     padding: 10px;
     margin-top: 20px;
     border-radius: 10px;
+    min-width: 60%;
 }
 
 .container-img-left img{
@@ -115,17 +118,17 @@ img.cover{
 }
 
 .container-right{
-    width: 50%;
+    width: 60%;
 }
 
 .table{
-    background-color: #fff;
+    background-color: #fff; 
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    padding: 40px 0;
     border-radius: 10px;
+    padding: 60px 0;
 }
 
 .table-img{
@@ -216,17 +219,17 @@ td{
     }
 
     .container-right{
-        width: 95%;
+        width: 100%;
     }
 
     .container-left{
-        width: 95%;
+        width: 100%;
     }
 
     .table-img{
         display: block;
         position: relative;
-        top: 40px;
+        top: 60px;
         width: 100%;
     }
 
