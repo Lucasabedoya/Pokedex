@@ -4,6 +4,8 @@ var blast = document.getElementById('blast');
 var diglett = document.getElementById('diglett');
 var pikachu = document.getElementById('pikachu');
 var eevee = document.getElementById('eevee');
+var headerImg = document.getElementById('header-left__img');
+
 
 // imagenes principales
 var img = document.getElementById('img')
@@ -49,6 +51,7 @@ charizard.onclick = function(){
     // cambiamos al pokemon seleccionado
     img.src = "images/charizard.png";
     img2.src = "images/charizard.png";
+    headerImg.src = "images/fuego.png";
     pok.innerHTML = "CHARIZARD";
 
     // ocultamos boton del pokemon seleccionado
@@ -79,6 +82,7 @@ blast.onclick = function(){
     // cambiamos al pokemon seleccionado
     img.src = "images/blast.png";
     img2.src = "images/blast.png";
+    headerImg.src = "images/agua.png";
     pok.innerHTML = "BLAST";
 
     // ocultamos boton del pokemon seleccionado
@@ -109,6 +113,7 @@ diglett.onclick = function(){
     // cambiamos al pokemon seleccionado
     img.src = "images/diglett.png";
     img2.src = "images/diglett.png";
+    headerImg.src = "images/tierra.png";
     pok.innerHTML = "DIGLETT";
 
     // ocultamos boton del pokemon seleccionado
@@ -139,6 +144,7 @@ pikachu.onclick = function(){
     // cambiamos al pokemon seleccionado
     img.src = "images/pikachu.png";
     img2.src = "images/pikachu.png";
+    headerImg.src = "images/electrico.png";
     pok.innerHTML = "PIKACHU";
 
     // ocultamos boton del pokemon seleccionado
@@ -169,6 +175,7 @@ eevee.onclick = function(){
     // cambiamos al pokemon seleccionado
     img.src = "images/eevee.png";
     img2.src = "images/eevee.png";
+    headerImg.src = "images/normal.png";
     pok.innerHTML = "EEVEE";
 
     // ocultamos boton del pokemon seleccionado
