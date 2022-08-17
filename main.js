@@ -22,8 +22,6 @@ var contPikachu = document.getElementById("pikachu-c")
 var contEevee = document.getElementById("eevee-c")
 
 // definiendo donde iran los fondos
-var header = document.getElementById('header')
-var footer = document.getElementById('footer')
 var tittle = document.getElementById('tittle')
 const th = document.querySelectorAll('th')
 
@@ -71,8 +69,6 @@ charizard.onclick = function(){
     eevee.className = "footer__button__img show";
 
     //set fondos del pokemon seleccionado
-    header.className = "header charizard-bg";
-    footer.className = "footer charizard-bg";
     tittle.className = "container-left__tittle charizard-bg";
     th.forEach(charizardbg);
 }
@@ -102,8 +98,6 @@ blast.onclick = function(){
     eevee.className = "footer__button__img show";
 
     //set fondos del pokemon seleccionado
-    header.className = "header blast-bg";
-    footer.className = "footer blast-bg";
     tittle.className = "container-left__tittle blast-bg";
     th.forEach(blastbg);
 }
@@ -133,8 +127,6 @@ diglett.onclick = function(){
     eevee.className = "footer__button__img show";
 
     //set fondos del pokemon seleccionado
-    header.className = "header diglett-bg";
-    footer.className = "footer diglett-bg";
     tittle.className = "container-left__tittle diglett-bg";
     th.forEach(diglettbg);
 }
@@ -164,8 +156,6 @@ pikachu.onclick = function(){
     eevee.className = "footer__button__img show";
 
     //set fondos del pokemon seleccionado
-    header.className = "header pikachu-bg";
-    footer.className = "footer pikachu-bg";
     tittle.className = "container-left__tittle pikachu-bg";
     th.forEach(pikachubg);
 }
@@ -195,8 +185,6 @@ eevee.onclick = function(){
     pikachu.className = "footer__button__img show";
 
     //set fondos del pokemon seleccionado
-    header.className = "header eevee-bg";
-    footer.className = "footer eevee-bg";
     tittle.className = "container-left__tittle eevee-bg";
     th.forEach(eeveebg);
 }
