@@ -8,92 +8,84 @@
 </head>
 
 <div class="container">
-        <header class="header charizard-bg" id="header">
-            <div class="header-img">
-                <img src="images/PokIcon.svg" alt="">
-            </div>
-            <div class="header-txt">
-                <h1>POKEDEX</h1>
-            </div>
-        </header>
-        <main>
-            <div class="main-container">
-                <div class="body-container">
-                    <div class="container-left">
-                        <div class="container-header-left charizard-bg" id="tittle">
-                            <div class="container-header-left-img">
-                                <img src="images/fire_icon.png" alt="">
-                            </div>
-                            <div class="container-header-left-txt">
-                                <h1 id="pok_name">CHARIZARD</h1>
-                            </div>
-                        </div>
-                        <div class="container-img-left">
-                            <img class="main-img" id="img" src="./images/charizard.png" alt="">
+    <header class="header charizard-bg" id="header" >
+        <div class="header__container">
+            <img class="header__container__img" src="images/pokeball.png" alt="">
+            <h1 class="header__container__text" class="">Pokedex</h1>
+        </div>
+    </header>
+    <main>
+        <div class="main">
+            <div class="container-left">
+                <div class="container-left__tittle charizard-bg" id="tittle">
+                    <img class="container-left__tittle__img" src="images/fire_icon.png" alt="">
+                    <h1 class="container-left__tittle__text" id="pokemon_name">CHARIZARD</h1>
+                </div>
+                <div class="container-left__img">
+                    <img class="main-img" id="img" src="./images/charizard.png" alt="">
 
-                        </div>
-                    </div>
-                    <div class="container-right">
-                        <img class="table-img" id="table-img" src="./images/charizard.png" alt="">
-                        <div class="table">
-                            <table>
-                                <tr>
-                                    <th class="th charizard-bg">NO.</th>
-                                    <th class="th charizard-bg">LEVEL</th>
-                                </tr>
-                                <tr>
-                                    <td>235</td>
-                                    <td>150</td>
-                                </tr>
-                            </table>
-                            <table>
-                                <tr>
-                                    <th class="th charizard-bg">TYPE</th>
-                                    <th class="th charizard-bg">HABILITY</th>
-                                </tr>
-                                <tr>
-                                    <td>PSYCHIC</td>
-                                    <td>PRESSURE</td>
-                                </tr>
-                            </table>
-                            <table>
-                                <tr>
-                                    <th class="th charizard-bg">HEIGHT</th>
-                                    <th class="th charizard-bg">WEIGHT</th>
-                                </tr>
-                                <tr>
-                                    <td>2.0 m</td>
-                                    <td>122,0 Kg</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
                 </div>
             </div>
-        </main> 
-        <footer>
-            <div class="footer-container charizard-bg" id="footer">
-                <div id="other-container">
-                    <h1>OTHERS</h1>
+            <div class="container-right">
+                <img class="table-img" id="table-img" src="./images/charizard.png" alt="">
+                <div class="container-right__table">
+                    <table>
+                        <tr>
+                            <th class="charizard-bg">NO.</th>
+                            <th class="charizard-bg">LEVEL</th>
+                        </tr>
+                        <tr>
+                            <td>235</td>
+                            <td>150</td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <th class="charizard-bg">TYPE</th>
+                            <th class="charizard-bg">HABILITY</th>
+                        </tr>
+                        <tr>
+                            <td>PSYCHIC</td>
+                            <td>PRESSURE</td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <th class="charizard-bg">HEIGHT</th>
+                            <th class="charizard-bg">WEIGHT</th>
+                        </tr>
+                        <tr>
+                            <td>2.0 m</td>
+                            <td>122,0 Kg</td>
+                        </tr>
+                    </table>
                 </div>
-                <div class="pokemon-container">
-                    <div class="pokemon hidden" id="charizard-c">
-                        <img class ="hidden" id="charizard" src="./images/charizard.png"/>
-                    </div>
-                    <div class="pokemon" id="blast-c">
-                        <img id="blast" src="./images/blast.png"/>
-                    </div>
-                    <div class="pokemon" id="diglett-c">
-                        <img id="diglett" src="./images/diglett.png" />
-                    </div>
-                    <div class="pokemon" id="pikachu-c">
-                        <img id="pikachu" src="./images/pikachu.png"/>
-                    </div>
-                    <div class="pokemon" id="eevee-c">
-                        <img id="eevee" src="./images/eevee.png"/>
-                    </div>
+            </div>
+        </div>
+    </main> 
+    <footer>
+        <div class="footer charizard-bg" id="footer">
+            <div class="footer__text">
+                <h1>OTHERS</h1>
+            </div>
+            <div class="footer__button">
+                <div class="footer__button__container hidden" id="charizard-c">
+                    <img class ="footer__button__img hidden" id="charizard" src="./images/charizard.png"/>
                 </div>
-            </div>  
-            <script src="main.js"></script>
-        </footer>   
+                <div class="footer__button__container" id="blast-c">
+                    <img class="footer__button__img" id="blast" src="./images/blast.png"/>
+                </div>
+                <div class="footer__button__container" id="diglett-c">
+                    <img class="footer__button__img" id="diglett" src="./images/diglett.png" />
+                </div>
+                <div class="footer__button__container" id="pikachu-c">
+                    <img class="footer__button__img" id="pikachu" src="./images/pikachu.png"/>
+                </div>
+                <div class="footer__button__container" id="eevee-c">
+                    <img class="footer__button__img" id="eevee" src="./images/eevee.png"/>
+                </div>
+            </div>
+        </div>  
+    </footer>  
+    <script src="main.js"></script> 
 </div>

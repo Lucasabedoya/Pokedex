@@ -1,3 +1,6 @@
+@import url(//db.onlinewebfonts.com/c/f4d1593471d222ddebd973210265762a?family=Pokemon);
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
 :root{
     --charizard-bg: rgb(255, 194, 115);
     --blast-bg: rgb(142, 174, 229);
@@ -58,70 +61,75 @@ html{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     font-size: 15px;
-    padding: 15px;
+    
 }   
 
-.header-img{
-    width: 50px;
+.header__container{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
-img.cover{
-    object-fit: cover;
+.header__container__img{
+    width: 10vh;
 }
 
-.header-txt{
-    margin: 0 15px;
+.header__container__text{
+    font-size: 5vh;
+    font-family: 'Pokemon', 'Michroma', sans-serif;
 }
 
-.main-container{
+.main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     width: 100%;
     padding: 15px;
-}
-
-.body-container{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .container-left{
-    width: 50%;
+    max-width: 50%;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 10px;
 }
 
-.container-header-left{
+.container-left__tittle{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-    margin-top: 20px;
     border-radius: 10px;
-    min-width: 60%;
+    padding: 2vh;
+    min-width: 90%;
+    margin: 20px;
 }
 
-.container-img-left img{
-    padding-top: 10px;
+.container-left__tittle__img{
     padding-right: 10px;
+    width: 20%;
+    max-width: 10vh;
+}
+
+.container-left__tittle__text{
+    text-align: center;
+    letter-spacing: 3px;
+    font-family: 'Pokemon', 'Michroma', sans-serif;
+}
+
+.container-left__img img{
     max-width: 100%;
     height: 45vh;
-}
-
-.container-header-left img{
-    padding-right: 10px;
-    width: 80px;
+    filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.7));
 }
 
 .container-right{
-    width: 60%;
+    width: 50%;
 }
 
-.table{
+.container-right__table{
     background-color: #fff; 
     display: flex;
     flex-flow: column nowrap;
@@ -147,13 +155,33 @@ td, th {
     text-align: center;
     border: solid #fff 1px;
     padding: 10px;
+    font-family: 'Michroma', sans-serif;
+}
+
+th{
+    font-size: 2.5vh;
 }
 
 td{
     background-color: var(--main-bg);
 }
 
-.footer-container{
+.footer{
+    font-family: 'Michroma';
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.footer__text{
+    font-size: 2.5vh;
+    font-family: 'Michroma',sans-serif;
+}
+
+.footer__button{
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -162,18 +190,7 @@ td{
     border-bottom-right-radius: 10px;
 }
 
-#other-container{
-    margin-right: 25px;
-    text-align: center;
-}
-
-.pokemon-container{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-}
-
-.pokemon{
+.footer__button__container{
     background-color: var(--main-bg);
     border-radius: 20px;
     padding: 2vh;
@@ -181,15 +198,15 @@ td{
     border: solid 2px;
 }
 
-.pokemon img{
+.footer__button__img{
     width: 10vh;
     max-height: 7vh;
 }
 
-.pokemon:hover{
+.footer__button__container:hover{
     background-color: #fff;
     transition: .2s;
-    padding: 13px;
+    padding: 2.2vh;
 }
 
 .hidden{
@@ -200,27 +217,33 @@ td{
     display: inline;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 670px) {
 
     .header{
         justify-content: center;
         height: auto;
     }
 
-    .body-container{
+    .main{
         align-items: center;
         justify-content: center;
         flex-flow: column nowrap;
         height: auto;
     }
 
-    table{
+    td, th{
         font-size: 14px;
     }
 
     .container-right{
         width: 100%;
+        align-items: center;
     }
+
+    .container-left__tittle__img{
+        width: 50%;
+    }
+
 
     .container-left{
         width: 100%;
@@ -231,14 +254,16 @@ td{
         position: relative;
         top: 60px;
         width: 100%;
+        max-height: 50vh;
+        filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.7));
+    }
+
+    .footer__text{
+        font-size: 1.5vh;
     }
 
     .main-img{
         display: none;
-    }
-
-    .footer-container{
-        height: auto;
     }
 
     .container{

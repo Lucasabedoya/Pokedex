@@ -10,7 +10,7 @@ var img = document.getElementById('img')
 var img2 = document.getElementById('table-img')
 
 // titulo del pokemon
-var pok = document.getElementById("pok_name")
+var pok = document.getElementById("pokemon_name")
 
 // contenedores de las imagenes
 var contCharizard = document.getElementById("charizard-c")
@@ -23,24 +23,24 @@ var contEevee = document.getElementById("eevee-c")
 var header = document.getElementById('header')
 var footer = document.getElementById('footer')
 var tittle = document.getElementById('tittle')
-const th = document.querySelectorAll(' .th')
+const th = document.querySelectorAll('th')
 
 
 // funciones para cambiar fondo de los th al recorrerlos
 function charizardbg(element){
-    element.className = " charizard-bg";
+    element.className = "charizard-bg";
 }
 function blastbg(element){
-    element.className = " blast-bg";
+    element.className = "blast-bg";
 }
 function diglettbg(element){
-    element.className = " diglett-bg";
+    element.className = "diglett-bg";
 }
 function pikachubg(element){
-    element.className = " pikachu-bg";
+    element.className = "pikachu-bg";
 }
 function eeveebg(element){
-    element.className = " eevee-bg";
+    element.className = "eevee-bg";
 }
 
 // ONCLICK DE CADA BOTON
@@ -52,25 +52,25 @@ charizard.onclick = function(){
     pok.innerHTML = "CHARIZARD";
 
     // ocultamos boton del pokemon seleccionado
-    contCharizard.className = "pokemon hidden";
-    charizard.className = " hidden";
+    contCharizard.className = "footer__button__container hidden";
+    charizard.className = "footer__button__img hidden";
 
     // mostramos contenedor del resto de pokemons
-    contBlast.className = "pokemon show";
-    contdiglett.className = "pokemon show";
-    contPikachu.className = "pokemon show";
-    contEevee.className = "pokemon show";
+    contBlast.className = "footer__button__container show";
+    contdiglett.className = "footer__button__container show";
+    contPikachu.className = "footer__button__container show";
+    contEevee.className = "footer__button__container show";
 
     // mostramos imagen del resto de pokemons
-    blast.className = "show";
-    diglett.className = "show";
-    pikachu.className = "show";
-    eevee.className = "show";
+    blast.className = "footer__button__img show";
+    diglett.className = "footer__button__img show";
+    pikachu.className = "footer__button__img show";
+    eevee.className = "footer__button__img show";
 
     //set fondos del pokemon seleccionado
     header.className = "header charizard-bg";
-    footer.className = "footer-container charizard-bg";
-    tittle.className = "container-header-left charizard-bg";
+    footer.className = "footer charizard-bg";
+    tittle.className = "container-left__tittle charizard-bg";
     th.forEach(charizardbg);
 }
 
@@ -82,25 +82,25 @@ blast.onclick = function(){
     pok.innerHTML = "BLAST";
 
     // ocultamos boton del pokemon seleccionado
-    contBlast.className = "pokemon hidden";
-    blast.className = " hidden";
+    contBlast.className = "footer__button__container hidden";
+    blast.className = "footer__button__img hidden";
 
     // mostramos contenedor del resto de pokemons
-    contCharizard.className = "pokemon show";
-    contdiglett.className = "pokemon show";
-    contPikachu.className = "pokemon show";
-    contEevee.className = "pokemon show";
+    contCharizard.className = "footer__button__container show";
+    contdiglett.className = "footer__button__container show";
+    contPikachu.className = "footer__button__container show";
+    contEevee.className = "footer__button__container show";
 
     // mostramos imagen del resto de pokemons
-    charizard.className = "show";
-    diglett.className = "show";
-    pikachu.className = "show";
-    eevee.className = "show";
+    charizard.className = "footer__button__img show";
+    diglett.className = "footer__button__img show";
+    pikachu.className = "footer__button__img show";
+    eevee.className = "footer__button__img show";
 
     //set fondos del pokemon seleccionado
     header.className = "header blast-bg";
-    footer.className = "footer-container blast-bg";
-    tittle.className = "container-header-left blast-bg";
+    footer.className = "footer blast-bg";
+    tittle.className = "container-left__tittle blast-bg";
     th.forEach(blastbg);
 }
 
@@ -112,25 +112,25 @@ diglett.onclick = function(){
     pok.innerHTML = "DIGLETT";
 
     // ocultamos boton del pokemon seleccionado
-    contdiglett.className = "pokemon hidden";
-    diglett.className = " hidden";
+    contdiglett.className = "footer__button__container hidden";
+    diglett.className = "footer__button__img hidden";
 
     // mostramos contenedor del resto de pokemons
-    contCharizard.className = "pokemon show";
-    contBlast.className = "pokemon show";
-    contPikachu.className = "pokemon show";
-    contEevee.className = "pokemon show";
+    contCharizard.className = "footer__button__container show";
+    contBlast.className = "footer__button__container show";
+    contPikachu.className = "footer__button__container show";
+    contEevee.className = "footer__button__container show";
 
     // mostramos imagen del resto de pokemons
-    charizard.className = "show";
-    blast.className = "show";
-    pikachu.className = "show";
-    eevee.className = "show";
+    charizard.className = "footer__button__img show";
+    blast.className = "footer__button__img show";
+    pikachu.className = "footer__button__img show";
+    eevee.className = "footer__button__img show";
 
     //set fondos del pokemon seleccionado
     header.className = "header diglett-bg";
-    footer.className = "footer-container diglett-bg";
-    tittle.className = "container-header-left diglett-bg";
+    footer.className = "footer diglett-bg";
+    tittle.className = "container-left__tittle diglett-bg";
     th.forEach(diglettbg);
 }
 
@@ -142,25 +142,25 @@ pikachu.onclick = function(){
     pok.innerHTML = "PIKACHU";
 
     // ocultamos boton del pokemon seleccionado
-    contPikachu.className = "pokemon hidden";
-    pikachu.className = " hidden";
+    contPikachu.className = "footer__button__container hidden";
+    pikachu.className = "footer__button__img hidden";
 
     // mostramos contenedor del resto de pokemons
-    contCharizard.className = "pokemon show";
-    contBlast.className = "pokemon show";
-    contdiglett.className = "pokemon show";
-    contEevee.className = "pokemon show";
+    contCharizard.className = "footer__button__container show";
+    contBlast.className = "footer__button__container show";
+    contdiglett.className = "footer__button__container show";
+    contEevee.className = "footer__button__container show";
 
     // mostramos imagen del resto de pokemons
-    charizard.className = "show";
-    blast.className = "show";
-    diglett.className = "show";
-    eevee.className = "show";
+    charizard.className = "footer__button__img show";
+    blast.className = "footer__button__img show";
+    diglett.className = "footer__button__img show";
+    eevee.className = "footer__button__img show";
 
     //set fondos del pokemon seleccionado
     header.className = "header pikachu-bg";
-    footer.className = "footer-container pikachu-bg";
-    tittle.className = "container-header-left pikachu-bg";
+    footer.className = "footer pikachu-bg";
+    tittle.className = "container-left__tittle pikachu-bg";
     th.forEach(pikachubg);
 }
 
@@ -172,24 +172,24 @@ eevee.onclick = function(){
     pok.innerHTML = "EEVEE";
 
     // ocultamos boton del pokemon seleccionado
-    contEevee.className = "pokemon hidden";
-    eevee.className = " hidden";
+    contEevee.className = "footer__button__container hidden";
+    eevee.className = "footer__button__img hidden";
 
     // mostramos contenedor del resto de pokemons
-    contCharizard.className = "pokemon show";
-    contBlast.className = "pokemon show";
-    contdiglett.className = "pokemon show";
-    contPikachu.className = "pokemon show";
+    contCharizard.className = "footer__button__container show";
+    contBlast.className = "footer__button__container show";
+    contdiglett.className = "footer__button__container show";
+    contPikachu.className = "footer__button__container show";
 
     // mostramos imagen del resto de pokemons
-    charizard.className = "show";
-    blast.className = "show";
-    diglett.className = "show";
-    pikachu.className = "show";
+    charizard.className = "footer__button__img show";
+    blast.className = "footer__button__img show";
+    diglett.className = "footer__button__img show";
+    pikachu.className = "footer__button__img show";
 
     //set fondos del pokemon seleccionado
     header.className = "header eevee-bg";
-    footer.className = "footer-container eevee-bg";
-    tittle.className = "container-header-left eevee-bg";
+    footer.className = "footer eevee-bg";
+    tittle.className = "container-left__tittle eevee-bg";
     th.forEach(eeveebg);
 }
