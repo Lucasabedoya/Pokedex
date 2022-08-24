@@ -23,24 +23,24 @@ var contEevee = document.getElementById("eevee-c")
 
 // definiendo donde iran los fondos
 var tittle = document.getElementById('tittle')
-const th = document.querySelectorAll('th')
+const th = document.querySelectorAll('td')
 
 
 // funciones para cambiar fondo de los th al recorrerlos
 function charizardbg(element){
-    element.className = "charizard-bg";
+    element.className = "container-right__table__td charizard-bg";
 }
 function blastbg(element){
-    element.className = "blast-bg";
+    element.className = "container-right__table__td blast-bg";
 }
 function diglettbg(element){
-    element.className = "diglett-bg";
+    element.className = "container-right__table__td diglett-bg";
 }
 function pikachubg(element){
-    element.className = "pikachu-bg";
+    element.className = "container-right__table__td pikachu-bg";
 }
 function eeveebg(element){
-    element.className = "eevee-bg";
+    element.className = "container-right__table__td eevee-bg";
 }
 
 // ONCLICK DE CADA BOTON
